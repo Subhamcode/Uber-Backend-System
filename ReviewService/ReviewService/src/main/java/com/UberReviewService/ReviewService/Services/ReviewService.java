@@ -19,9 +19,7 @@ public class ReviewService implements CommandLineRunner {
     public void run(String... args) throws Exception {
         System.out.println("***********");
         Review r= Review.builder().
-                content("Amazing ride quality")
-                .createdAt(new Date())
-                .updatedAt(new Date())
+                content("Amazing ride to go for")
                 .rating(4.5)
                 .build();
         reviewrepository.save(r);//this code executes sql query
